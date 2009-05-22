@@ -8,7 +8,7 @@ utilisé pour les exercices est 2.5.2.
    en tapant Ctrl et d (Ctrl et z sous windows).
 
 2. essayez de créer un identifiant 'val' equal à 1, 
-   un autre 'mess' équal à 'Bienvenu à Pycon'.
+   un autre 'mess' équal à 'Bienvenue à Pycon'.
 
 La commande 'print' permet d'afficher un identifiant 
 sur la sortie standard. Vous pouvez en afficher plusieurs 
