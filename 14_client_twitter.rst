@@ -93,3 +93,12 @@ Pour aller plus loin:
   à obtenir un ``ElementTree`` similaire à celui d'une page XHTML
   équivalente valide.
 
+- ``pyquery`` est un autre module basé sur ``lxml`` pour manipuler
+  des documents XML de manière très similaire au projet javascript
+  ``jquery`` mais en restant en python::
+
+    http://pypi.python.org/pypi/pyquery
+
+  La documentation en ligne présente des cas d'utilisation qui
+  mettent en évidence la simplicité d'utilisation de cette API.
+
