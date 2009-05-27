@@ -67,7 +67,8 @@ programme avec le mot clef 'pycon-fr'.
 Exercice 14.2: Modifier le programme précendent pour faire 2 print
 sucessifs sur le même résultat de recherche (c'est à dire le résultat
 du même appel à la fonction ``urlopen``). Expliquer le comportement
-observé.
+observé. Corriger le programme pour afficher deux fois le résultat d'une même
+requête.
 
 
 Parser un contenu XML
@@ -102,7 +103,15 @@ Il est aussi possible de trouver tous les éléments de l'arbre de tag ``b``
 en faisant un requète de type XPATH avec ``findall`` au niveau de la
 racine::
 
-  TODO
+  >>> tous_les_b = racine.findall('//b')
+  >>> tous_les_b
+  [<Element 'b' at 0x...>, <Element 'b' at 0x...>]
+
+  >>> b is tous_les_b[0]
+  True
+
+  >>> fils_de_a[1].getchildren()[0] is tous_les_b[1]
+  True
 
 Enfin il est possible de parser le XML contenu dans un objet python qui se
 comporte comme un ``file`` (ce qui est le cas de l'objet retourné par
