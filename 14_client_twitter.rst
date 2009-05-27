@@ -17,6 +17,10 @@ au format XML ou JSON (liste de dictionnaires javascript).
 
 .. RESTful_:: http://fr.wikipedia.org/wiki/Representational_State_Transfer
 
+
+Exécuter une requête HTTP
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
 En python pour faire une requête HTTP GET le plus simple est d'importer
 le module ``urllib2`` de Python 2.5 / 2.6 (en Python 3.x ce module est
 renommé urllib.request)::
@@ -51,10 +55,23 @@ JSON::
 
   http://search.twitter.com/search.json?q=python
 
-1. Écrire un programme qui recupère une connexion sur la page de
-résultats de la recherche sur un mot clef saisi par l'utilisateur et
-qui affiche le contenu XML brut de la réponse du serveur. Tester le
+
+Exercices HTTP
+~~~~~~~~~~~~~~
+
+Exercice 14.1: Écrire un programme qui recupère une connexion sur la
+page de résultats de la recherche sur un mot clef saisi par l'utilisateur
+et qui affiche le contenu XML brut de la réponse du serveur. Tester le
 programme avec le mot clef 'pycon-fr'.
+
+Exercice 14.2: Modifier le programme précendent pour faire 2 print
+sucessifs sur le même résultat de recherche (c'est à dire le résultat
+du même appel à la fonction ``urlopen``). Expliquer le comportement
+observé.
+
+
+Parser un contenu XML
+~~~~~~~~~~~~~~~~~~~~~
 
 Le contenu XML obtenu est illisible pour un humain normalement
 constitué. Nous allons maintenant tenter d'extraire les informations qui
@@ -62,9 +79,65 @@ nous intéressent pour afficher juste le nom de l'auteur et le contenu
 textuel de chaque résultat. Pour cela nous allons 'parser' le contenu XML
 avec le module ``xml.etree.cElementTree`` de la bibliothèque standard.
 
-TODO
+Pour parser une chaine de caractères contenant un arbre XML il suffit de
+tapper les instruction suivantes dans un terminal::
 
-Pour aller plus loin:
+  >>> import xml.etree.cElementTree as etree
+  >>> chaine_xml = '<a><b attribut="valeur">Contenu de b</b><c><b/></c></a>'
+
+  >>> racine = etree.fromstring(chaine_xml)
+  >>> racine.tag
+  'a'
+  >>> fils_de_a = racine.getchildren()
+  >>> fils_de_a
+  [<Element 'b' at 0x...>, <Element 'c' at 0x...>]
+
+  >>> b = fils_de_a[0]
+  >>> b.keys()
+  ['attribut']
+  >>> b.get('attribut')
+  'valeur'
+
+Il est aussi possible de trouver tous les éléments de l'arbre de tag ``b``
+en faisant un requète de type XPATH avec ``findall`` au niveau de la
+racine::
+
+  TODO
+
+Enfin il est possible de parser le XML contenu dans un objet python qui se
+comporte comme un ``file`` (ce qui est le cas de l'objet retourné par
+``urlopen``)::
+
+  >>> f = urllib2.urlopen('http://search.twitter.com/search.atom?q=python')
+  >>> arbre = etree.parse(f)
+  >>> arbre
+  <__builtin__.ElementTree instance at 0x...>
+
+A noter dans ce cas on obtient un objet ``ElementTree`` au lieu de la
+racine de type ``Element``. Pour obtenir la nouvelle racine il suffit de
+faire::
+
+  >>> racine_2 = arbre.getroot()
+  >>> racine_2.tag
+  '{http://www.w3.org/2005/Atom}feed'
+
+Dans ce cas on peut noter que le nom du tag contient aussi un "namespace" XML
+qu'il ne fait pas oublier lors de traitements.
+
+
+Exercices XML
+~~~~~~~~~~~~~
+
+Exercice 14.3: Modifier le programme du 14.1 pour parser le XML obtenu et
+afficher tous les objets dont le tag est ``{http://www.w3.org/2005/Atom}entry``.
+
+Exercice 14.4: Modifier le programme précédent pour faire un programme qui
+demande un mot clef à l'utilisateur, fait la recherche sur twitter et
+retourne la liste des noms des auteur et le contenu du message posté.
+
+
+Pour aller plus loin
+~~~~~~~~~~~~~~~~~~~~
 
 - quand on passe des paramètres après le '?' d'une requête GET il
   faut prendre en compte certains caractères spéciaux ('/' s'écrit
