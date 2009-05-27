@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 
+import urllib2
+
 # demande de saisie du mot clef a l'utilisateur
 mot_clef = raw_input('Tapper le mot clef: ')
 

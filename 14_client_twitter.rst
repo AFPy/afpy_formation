@@ -100,10 +100,11 @@ tapper les instruction suivantes dans un terminal::
   'valeur'
 
 Il est aussi possible de trouver tous les éléments de l'arbre de tag ``b``
-en faisant un requète de type XPATH avec ``findall`` au niveau de la
-racine::
+en faisant un requète de type XPATH avec ``findall`` sur un objet de type
+ElementTree qui contient la racine avec la notation ``//`` qui signifie
+"chercher dans toute la descendance"::
 
-  >>> tous_les_b = racine.findall('//b')
+  >>> tous_les_b = etree.ElementTree(racine).findall('//b')
   >>> tous_les_b
   [<Element 'b' at 0x...>, <Element 'b' at 0x...>]
 
