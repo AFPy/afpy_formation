@@ -6,7 +6,7 @@ Utilisation des fichiers
 
     nom_fichier = "/etc/passwd"
     fichier = open(nom_fichier)
-    for i in fichier.readlines()
+    for i in fichier.readlines():
         print i
 
 1. Faire en sorte de ne pas afficher les lignes, sauf pour l'utilisateur nobody.

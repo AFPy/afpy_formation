@@ -57,6 +57,7 @@ les lettres soir, si la chaine se termine par bonjour.
 
     ma_chaine = "bonjour utilisateur"
     print ma_chaine.split()
+    print ma_chaine
 
     ma_chaine = raw_input("> ")
     for i in ma_chaine.split():
