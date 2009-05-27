@@ -19,7 +19,7 @@ Programmation des chaines
     print ma_chaine
     print len(ma_chaine)
 
-    mon_autre_chaine = input("Entrez votre nom : ")
+    mon_autre_chaine = raw_input("Entrez votre nom : ")
     print ma_chaine + ' ' + mon_autre_chaine
     
 
@@ -58,7 +58,7 @@ les lettres soir, si la chaine se termine par bonjour.
     ma_chaine = "bonjour utilisateur"
     print ma_chaine.split()
 
-    ma_chaine = input("> ")
+    ma_chaine = raw_input("> ")
     for i in ma_chaine.split():
         if i == 'bonjour':
             print "Oui, bonjour encore"
@@ -77,15 +77,15 @@ si c'est le premier mot, avec une majuscule.
 :: 
     #!/usr/bin/env python 
     
-    chaine = input("Entrez une chaine : ")
-    nombre = input("Entrez un nombre : ")
-    for i in int(nombre):
+    chaine = raw_input("Entrez une chaine : ")
+    nombre = raw_input("Entrez un nombre : ")
+    for i in range(int(nombre)):
         print chaine
 
 7. Corriger le programme pour vérifier que le nombre n'est pas
-négatif, ou trop grand
+négatif, ou trop grand ( supérieur à 100 ).
 
 8. Corriger le programme pour voir si on rentre autre chose qu'un
-entier ( indice : utiliser isal
+entier ( indice : utiliser la méthode isdigit )
 
 
