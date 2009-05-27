@@ -9,7 +9,7 @@ mot_clef = raw_input('Tapper le mot clef: ')
 requete = 'http://search.twitter.com/search.json?q=' + mot_clef
 
 # execution de la requete HTTP
-f = urllib.urlopen(requete)
+f = urllib2.urlopen(requete)
 
 # affichage du XML resultat
 print f.read()
