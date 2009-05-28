@@ -11,7 +11,7 @@ ENTRY_TAG = "entry"
 mot_clef = raw_input('Tapper le mot clef: ')
 
 # construction de l'URL de la requete HTTP
-requete = 'http://search.twitter.com/search.json?q=' + mot_clef
+requete = 'http://search.twitter.com/search.atom?q=' + mot_clef
 
 # execution de la requete HTTP
 f = urllib2.urlopen(requete)
