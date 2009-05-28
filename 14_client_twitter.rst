@@ -3,16 +3,16 @@ Programmation d'un petit client twitter
 
 But: utiliser la bibliothèque standard de Python pour faire une
 petit client HTTP qui affiche le buzz autour de la conférence PyCon
-France. Cet excercice va nous permettre faire une requête HTTP et de
+France. Cet exercice va nous permettre de faire une requête HTTP et de
 parser le contenu du résultat au format XML pour extraire l'auteur et
 le contenu de chaque tweet.
 
-twitter.com est un service de micro-blogging ou les utilisateur peuvent
+twitter.com est un service de micro-blogging ou les utilisateurs peuvent
 poster des messages de maximum 140 caractères de long. Twitter a
 l'avantage de fournir une interface programmatique (API) RESTful_, c'est
-a dire qu'il est possible de d'éxecuter des requêtes HTTP de type
+à dire qu'il est possible de d'éxecuter des requêtes HTTP de type
 GET ou POST en passant des arguments en paramètres de la requête et
-en récupérant le résultat dans le corp de la réponse généralement
+en récupérant le résultat dans le corps de la réponse généralement
 au format XML ou JSON (liste de dictionnaires javascript).
 
 .. RESTful_:: http://fr.wikipedia.org/wiki/Representational_State_Transfer
@@ -50,7 +50,7 @@ Le résultat est rendu au format XML 'Atom' qui permet d'enregister
 le flux de résultats dans un lecteur de flux comme Google Reader par
 exemple.
 
-Il est aussi possible d'obtenir les même resultats dans au format
+Il est aussi possible d'obtenir les même resultats dans le format
 JSON::
 
   http://search.twitter.com/search.json?q=python
@@ -64,8 +64,8 @@ page de résultats de la recherche sur un mot clef saisi par l'utilisateur
 et qui affiche le contenu XML brut de la réponse du serveur. Tester le
 programme avec le mot clef 'pycon-fr'.
 
-Exercice 14.2: Modifier le programme précendent pour faire 2 print
-sucessifs sur le même résultat de recherche (c'est à dire le résultat
+Exercice 14.2: Modifier le programme précedent pour faire 2 print
+successifs sur le même résultat de recherche (c'est à dire le résultat
 du même appel à la fonction ``urlopen``). Expliquer le comportement
 observé. Corriger le programme pour afficher deux fois le résultat d'une même
 requête.
@@ -81,7 +81,7 @@ textuel de chaque résultat. Pour cela nous allons 'parser' le contenu XML
 avec le module ``xml.etree.cElementTree`` de la bibliothèque standard.
 
 Pour parser une chaine de caractères contenant un arbre XML il suffit de
-tapper les instruction suivantes dans un terminal::
+taper les instruction suivantes dans un terminal::
 
   >>> import xml.etree.cElementTree as etree
   >>> chaine_xml = '<a><b attribut="valeur">Contenu de b</b><c><b/></c></a>'
@@ -100,7 +100,7 @@ tapper les instruction suivantes dans un terminal::
   'valeur'
 
 Il est aussi possible de trouver tous les éléments de l'arbre de tag ``b``
-en faisant un requète de type XPATH avec ``findall`` sur un objet de type
+en faisant un requête de type XPATH avec ``findall`` sur un objet de type
 ElementTree qui contient la racine avec la notation ``//`` qui signifie
 "chercher dans toute la descendance"::
 
@@ -132,7 +132,7 @@ faire::
   '{http://www.w3.org/2005/Atom}feed'
 
 Dans ce cas on peut noter que le nom du tag contient aussi un "namespace" XML
-qu'il ne fait pas oublier lors de traitements.
+qu'il ne faut pas oublier lors des traitements.
 
 
 Exercices XML
@@ -143,7 +143,7 @@ afficher tous les objets dont le tag est ``{http://www.w3.org/2005/Atom}entry``.
 
 Exercice 14.4: Modifier le programme précédent pour faire un programme qui
 demande un mot clef à l'utilisateur, fait la recherche sur twitter et
-retourne la liste des noms des auteur et le contenu du message posté.
+retourne la liste des noms des auteurs et le contenu du message posté.
 
 
 Pour aller plus loin
