@@ -90,8 +90,12 @@ est appelée en cas d'erreur. Ainsi:
 ...
 pas de conversion de 3 en tuple
 
-5. Essayez de faire une fonction saissisant un âge par 
-   'raw_input' et avertit l'utilisateur si l'âge 
-   rentré n'a pas pu être converti en réel.
+Attention! L'indentation des blocks est significative en python. Essayez
+toujours de respecter la convention 4 espaces pour un niveau d'indendation
+(il faut penser a configurer son éditeur pour convertir les tabs en 4
+espaces automatiquement).
 
+5. Essayez de tapper une suite d'instructions saissisant un âge par
+   'raw_input' et avertit l'utilisateur si l'âge rentré n'a pas pu
+   être converti en réel.
 
