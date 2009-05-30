@@ -25,7 +25,6 @@ les 2 spaces en débuts de chaque ligne)::
   print "voici la liste des arguments du programme:"
   print sys.argv
 
-
 La première ligne est un import du module "sys" qui permet d'accèder
 à un certain nombre de paramètres systèmes comme par exemple les
 arguments passés en ligne de commande au lancement d'un programme.
@@ -38,7 +37,6 @@ tappant dans un terminal::
 Puis::
 
   % python exercice_5_1.py argument_1 deux 3
-
 
 Il est possible de rendre un programme python automatiquement exécutable (comme
 un script shell) en ajoutant la ligne suivante en première ligne::
