@@ -1,7 +1,7 @@
 Tests de conditions (if elif else)
 ----------------------------------
 
-En python les tests de conditionels utilise la structure suivante
+En python les tests de conditionels utilisent la structure suivante
 (attention aux deux points et à l'indentation)::
 
   >>> la_reponse = 6 * 7
@@ -15,8 +15,8 @@ En python les tests de conditionels utilise la structure suivante
   la vie, l'univers et tout le reste
 
 Les conditions après un if ou un elif sont l'évaluation bouléenne d'une
-expression python. Les expressions python suivante sont équivalente au booléen
-False:
+expression python. Les expressions python suivantes sont équivalente
+au booléen False:
 
   - le nombre entier zero: 0
   - le nombre flottant zero: 0.0
