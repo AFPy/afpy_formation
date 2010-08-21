@@ -44,7 +44,7 @@ tuple, chaîne, dictionnaire)::
   ...          print valeur, 'est divisible par deux'
   ...
 
-Exercice 7: Écrire un programme qui affiche 'j'aime pas les ' + chaque mot passé
+Exercice 7.2: Écrire un programme qui affiche 'j'aime pas les ' + chaque mot passé
 en arguments de la ligne de commande.
 
 

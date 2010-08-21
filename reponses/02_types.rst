@@ -1,16 +1,18 @@
-1.
+2.1.
+
 >>> val = 1
 >>> type(val)
 <type 'int'>
 >>> mess = 'Bienvenu à Pycon'
->>> type(mess) 
+>>> type(mess)
 <type 'str'>
 
-2. 
+2.2.
+
 >>> a = 1
 >>> type(a)
 <type 'int'>
->>> a = 2**31
+>>> a = 2 ** 31
 >>> type(a)
 <type 'long'>
 >>> a = 1.
@@ -35,26 +37,27 @@
 >>> type(a)
 <type 'dict'>
 
-3.
->>> mess = "Bienvenu à Pycon"
+2.3.
+
+>>> mess = "Bienvenue à Pycon"
 >>> mess[0]
 'B'
->>> mess[0:8]
-'Bienvenu'
->>> mess[12:17]
-'Pycon'
+>>> mess[0:9]
+'Bienvenue'
+>>> mess[14:17]
+'con'
 
 On peut aussi omettre l'indice de début au de fin:
 
->>> mess[:8]
-'Bienvenu'
->>> mess[12:]
-'Pycon'
+>>> mess[:9]
+'Bienvenue'
+>>> mess[14:]
+'con'
 
 Voir partir de la fin:
 
->>> mess[-5:]
-'Pycon'
+>>> mess[-3:]
+'con'
 
 4.
 >>> lst = [('Gar', 34), ('Her', 30)]
@@ -66,14 +69,14 @@ Voir partir de la fin:
 5. On ne peut pas modifier le contenu d'un non-mutable:
 
 >>> dpt = ('Gar', 30)
->>> dpt[0] = 'Gard' 
+>>> dpt[0] = 'Gard'
 TypeError: 'tuple' object does not support item assignment
 
-On est obligé de créer un nouvel objet mais le nom de 
-l'identifiant peut être identique: 
+On est obligé de créer un nouvel objet mais le nom de
+l'identifiant peut être identique:
 
 >>> dpt = ('Gard', 30)
 
-Le fonctionnement des identifiants est expliqué plus en 
+Le fonctionnement des identifiants est expliqué plus en
 détail dans la section suivante.
 
