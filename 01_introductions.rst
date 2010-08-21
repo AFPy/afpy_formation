@@ -2,15 +2,15 @@ Introduction à Python
 ---------------------
 
 La commande python démarre l'interpréteur. La version
-utilisé pour les exercices est 2.5.2.
+utilisé pour les exercices est 2.x. (x >= 5)
 
-1. vérifier que vous pouvez quitter l'interpréteur
-   en tapant Ctrl et d (Ctrl et z sous windows).
+1. vérifiez que vous pouvez quitter l'interpréteur
+   en tapant Ctrl-d (Ctrl-z sous windows).
 
-2. essayez de créer un identifiant 'val' equal à 1,
-   un autre 'mess' équal à 'Bienvenue à Pycon'.
+2. essayez de créer une variable 'val' égal à 1,
+   un autre 'mess' équal à 'Bienvenue à Pycon FR'.
 
-La commande 'print' permet d'afficher un identifiant
+La commande 'print' permet d'afficher une variable
 sur la sortie standard. Vous pouvez en afficher plusieurs
 en les séparant par des virgules. Exemple:
 
@@ -18,14 +18,14 @@ en les séparant par des virgules. Exemple:
 
 3. essayez d'afficher
 
-   bienvenu à Pycon
+   bienvenue à Pycon FR
    Il y a 100 participants
 
-'help(idt)' permet de demander de l'aide sur l'identifiant
-'idt'. Si une page de documentation s'affiche, tapez
+'help(x)' permet de demander de l'aide sur la variable x
+(variable, fonction, etc.). Si une page de documentation s'affiche, tapez
 ensuite 'q' pour quitter.
 
 4. essayez d'obtenir de l'aide sur les identifiants
-   'val' et 'mess' que vous avez créé au point 2.
-   Obtenez-vous toujours de l'aide?
+   'val' et 'mess' que vous avez créés au point 2.
+   Obtenez-vous toujours de l'aide ?
 
