@@ -8,8 +8,8 @@ Le type d'un identifiant est défini au moment de sa création par une
 analyse de l'interpréteur. Vous pouvez ensuite connaître le type d'un
 identifiant 'idt' par l'appel: 'type(idt)'.
 
-1. Demandez les types des identifiants 'val' et 'mess'
-   créés au point 2 de l'introduction.
+Exercice 2.1. Demandez les types des identifiants 'val' et 'mess'
+créés au point 2 de l'introduction.
 
 
 Mutables / non mutables
