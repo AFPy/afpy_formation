@@ -4,19 +4,19 @@ Introduction à Python
 La commande python démarre l'interpréteur. La version
 utilisé pour les exercices est 2.x. (x >= 5)
 
-1. vérifiez que vous pouvez quitter l'interpréteur
-   en tapant Ctrl-d (Ctrl-z sous windows).
+Exercice 1.1: vérifiez que vous pouvez quitter l'interpréteur
+en tapant Ctrl-d (Ctrl-z sous windows).
 
-2. essayez de créer une variable 'val' égal à 1,
+Exercice 1.2: essayez de créer une variable 'val' égal à 1,
    un autre 'mess' équal à 'Bienvenue à Pycon FR'.
 
 La commande 'print' permet d'afficher une variable
 sur la sortie standard. Vous pouvez en afficher plusieurs
-en les séparant par des virgules. Exemple:
+en les séparant par des virgules. Exemple::
 
->>> print val, mess
+  >>> print val, mess
 
-3. essayez d'afficher
+Exemple 1.3: essayez d'afficher::
 
    bienvenue à Pycon FR
    Il y a 100 participants
@@ -25,7 +25,7 @@ en les séparant par des virgules. Exemple:
 (variable, fonction, etc.). Si une page de documentation s'affiche, tapez
 ensuite 'q' pour quitter.
 
-4. essayez d'obtenir de l'aide sur les identifiants
+Exercice 1.4: essayez d'obtenir de l'aide sur les identifiants
    'val' et 'mess' que vous avez créés au point 2.
    Obtenez-vous toujours de l'aide ?
 
