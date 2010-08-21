@@ -1,10 +1,10 @@
 Les boucles
 -----------
 
-En python il y a deux manières classiques de répeter plusieurs fois l'exécutions
-d'un groupe de lignes : les boucle while et for.
+En python il n'y a que deux manières classiques de répéter plusieurs fois l'exécution
+d'un groupe de lignes : les boucles 'while' et 'for'.
 
-La boucle while permet de répeter un bloc tant qu'une expression vaut True::
+La boucle 'while' permet de répeter un bloc tant qu'une expression est vraie ::
 
   >>> i = 1
   >>> while i <= 1024:
@@ -22,10 +22,10 @@ La boucle while permet de répeter un bloc tant qu'une expression vaut True::
   512
   1024
 
-Exercice 7.1: Ecrire un programme qui boucle a l'infinie en ecrivant:
-"All work and no play makes Jack a dull boy" (faire un ctrl-C pour l'arreter).
+Exercice 7.1: Ecrire un programme qui boucle a l'infini en écrivant:
+"All work and no play makes Jack a dull boy" (faire un ctrl-C pour l'arrêter).
 
-La deuxième manière est de parcourir une collection iterable d'éléments (liste,
+La deuxième manière est de parcourir une collection itérable d'éléments (liste,
 tuples, caratères d'une chaine, éléments d'un dictionnaires)::
 
   >>> jours = ['lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi']
