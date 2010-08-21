@@ -25,7 +25,7 @@ au booléen False:
   - le dictionnaire vide: {}
   - la chaine de caractères vide: ""
 
-Exercice 6: écrire un programme qui:
+Exercice 6.1: écrire un programme qui:
 
   - affiche "arguments requis" si aucun argument n'est passé en ligne de
     commande
