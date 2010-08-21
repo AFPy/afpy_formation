@@ -29,7 +29,7 @@ Ou plus directement::
   >>> fonction_2(1, 2)
   -1
 
-Exercice 9: écrire un nouveau programme qui importe le module défini
+Exercice 9.1: écrire un nouveau programme qui importe le module défini
 par le programme 08_fonction.py (en le renommant mon_module.py car un nom
 de module ne peut pas commencer par un chiffre) et appelle la fonction
 jaimepas pour les chiffres de 0 a 9.

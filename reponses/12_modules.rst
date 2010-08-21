@@ -2,8 +2,8 @@
 
 ::
 
-  >>> [].extend.__doc__
-  'L.extend(iterable) -- extend list by appending elements from the iterable'
+  >>> print [].extend.__doc__
+  L.extend(iterable) -- extend list by appending elements from the iterable
 
 2. ::
 
@@ -17,15 +17,8 @@
     for i in os.getgroups():
        print i
 
+
 4. ::
-
-    #!/usr/bin/env python
-    
-    import shutils
-    tmp = os.getenv('TMP')
-    shutils.copyfile('/etc/passwd', tmp + '/passwd')
-
-5. ::
     #!/usr/bin/env python
 
     import os
@@ -34,7 +27,7 @@
     noyau = u[0]
     version = u[2]
     hostname = u[1]
-    print "%s a lancé le programme sur un noyau %s en version %s et une machine nommé %s" % (user, noyau, version, hostname) 
+    print "%s a lancé le programme sur un noyau %s en version %s et une machine nommée %s" % (user, noyau, version, hostname) 
 
 
    
