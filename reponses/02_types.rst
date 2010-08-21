@@ -49,10 +49,10 @@
 
 On peut aussi omettre l'indice de début au de fin:
 
->>> mess[:8]
-'Bienvenu'
->>> mess[12:]
-'Pycon'
+>>> mess[:9]
+'Bienvenue'
+>>> mess[14:]
+'con'
 
 Voir partir de la fin:
 
