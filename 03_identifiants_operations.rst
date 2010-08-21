@@ -88,7 +88,7 @@ C'est par ce mécanisme d'identifiants que vous pourrez
 appliquez en Python les concepts de pointeur ou de référence
 appris dans d'autres langages.
 
-1. Affecter trois variables 'a', 'b', 'c' afin d'obtenir ces résultats ::
+Exercice 3.1. Affecter trois variables 'a', 'b', 'c' afin d'obtenir ces résultats ::
 
   >>> a == [3, 7]
   True
@@ -125,7 +125,7 @@ Enfin on peut obtenir le booléen contraire par le mot clé 'not' ::
   False
 
 
-2. Affectez les variables b et c pour obtenir ::
+Exercice 3.2. Affectez les variables b et c pour obtenir ::
 
   >>> not (b < 12)
   True
@@ -136,7 +136,7 @@ Parmi les opérations sur les types numériques (int, long, float, complex)
 on trouve l'addition '+', la soustraction '-', la multiplication '*' et
 la division '/'.
 
-3. Affectez 'a', 'b' et 'c', 'd' pour obtenir ::
+Exercice 3.3. Affectez 'a', 'b' et 'c', 'd' pour obtenir ::
 
   >>> a + b > 10
   True
@@ -158,12 +158,12 @@ l'operateur de multiplication ::
  ('pycon', 75019, 'pycon', 75019, 'pycon', 75019)
 
 
-4. Utilisez ces propriétés sur le type str pour afficher en utilisant le
-caractère '=' au maximum deux fois ::
+Exercice 3.4. Utilisez ces propriétés sur le type str pour afficher en utilisant le
+caractère '=' au maximum une fois ::
 
   ===== Bienvenue =====
 
-5. Voici un extrait de conférences pour le samedi et dimanche de l'édition 2009
+Exercice 3.5. Voici un extrait de conférences pour le samedi et dimanche de l'édition 2009
 avec leur temps en minutes ::
 
   >>> samedi = [('PyQuery', 20), ('PyQt4', 10)]

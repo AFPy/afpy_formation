@@ -36,7 +36,7 @@ de saisir une valeur sur la sortie standard::
   'Christophe'
   >>> 
 
-1. Demandez l'age de l'utilisateur à l'aide de 'raw_input' et affichez son age
+Exercice 4.1. Demandez l'age de l'utilisateur à l'aide de 'raw_input' et affichez son age
 dans dix ans.
 
 

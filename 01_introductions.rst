@@ -1,7 +1,7 @@
 Introduction à Python
 ---------------------
 
-La commande python démarre l'interpréteur. La version
+La commande Python démarre l'interpréteur. La version
 utilisé pour les exercices est 2.x. (x >= 5)
 
 Exercice 1.1: vérifiez que vous pouvez quitter l'interpréteur
