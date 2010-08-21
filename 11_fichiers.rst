@@ -9,7 +9,7 @@ Utilisation des fichiers
     for i in fichier.readlines():
         print i
 
-1. Faire en sorte de ne pas afficher les lignes, sauf pour l'utilisateur nobody.
+1. Modifier ce programme pour n'afficher que la ligne de l'utilisateur nobody.
     
 2. En utilisant split, et int, n'afficher que les lignes pour les utilisateurs avec
 un uid supérieur à 500 ( l'uid est le troisiéme champ de la ligne, séparé par : )
@@ -34,7 +34,7 @@ un uid supérieur à 500 ( l'uid est le troisiéme champ de la ligne, séparé p
 4. Ajouter la ligne avec l'utilisateur toto aprés le premier des utilisateurs 
 'adm' ou 'operator'.
 
-5. Ecrire les 10 premiers nombres pairs un fichier dans /tmp/. 
+5. Écrire les 10 premiers nombres pairs un fichier dans /tmp/. 
 
-6. Ecrire à la suite du fichier précedent les 10 premiers nombres impairs, sans
+6. Ecrire à la suite du fichier précédent les 10 premiers nombres impairs, sans
 écraser le contenu du fichier. Le mode 'a' ( comme append ) n'écrase pas le fichier.

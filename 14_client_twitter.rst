@@ -1,7 +1,7 @@
 Programmation d'un petit client twitter
 ---------------------------------------
 
-But: utiliser la bibliothèque standard de Python pour faire une
+But: utiliser la bibliothèque standard de Python pour faire un
 petit client HTTP qui affiche le buzz autour de la conférence PyCon
 France. Cet exercice va nous permettre de faire une requête HTTP et de
 parser le contenu du résultat au format XML pour extraire l'auteur et
@@ -21,7 +21,7 @@ au format XML ou JSON (liste de dictionnaires javascript).
 Exécuter une requête HTTP
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-En python pour faire une requête HTTP GET le plus simple est d'importer
+En Python pour faire une requête HTTP GET le plus simple est d'importer
 le module ``urllib2`` de Python 2.5 / 2.6 (en Python 3.x ce module est
 renommé urllib.request)::
 
@@ -35,7 +35,7 @@ renommé urllib.request)::
 La variable ``f`` se comporte comme une instance de ``file`` sauf que
 le contenu est lu via une connexion réseau HTTP au lieu d'un accès au
 disque dur. Ici le résultat affiché par ``print`` est le contenu du
-code source HTML de la page d'accueil du site de l'AFPy.
+code source HTML de la page d'accueil du site de l'afpy.
 
 L'API de recherche de twitter est décrite sur cette page::
 
@@ -50,7 +50,7 @@ Le résultat est rendu au format XML 'Atom' qui permet d'enregister
 le flux de résultats dans un lecteur de flux comme Google Reader par
 exemple.
 
-Il est aussi possible d'obtenir les même resultats dans le format
+Il est aussi possible d'obtenir les mêmes resultats dans le format
 JSON::
 
   http://search.twitter.com/search.json?q=python
@@ -114,7 +114,7 @@ ElementTree qui contient la racine avec la notation ``//`` qui signifie
   >>> fils_de_a[1].getchildren()[0] is tous_les_b[1]
   True
 
-Enfin il est possible de parser le XML contenu dans un objet python qui se
+Enfin il est possible de parser le XML contenu dans un objet Python qui se
 comporte comme un ``file`` (ce qui est le cas de l'objet retourné par
 ``urlopen``)::
 
@@ -165,7 +165,7 @@ Pour aller plus loin
   documentation en ligne du module ``urllib2`` montre comment charger
   un ``handler`` dédié à ce mode d'authentifications.
 
-- le module xml.etree de la lib standard de python est un peu limité
+- le module xml.etree de la lib standard de Python est un peu limité
   notamment concernant le support de XPATH. Il existe une alternative
   plus complète disponible en module d'extension::
 
@@ -178,7 +178,7 @@ Pour aller plus loin
 
 - ``pyquery`` est un autre module basé sur ``lxml`` pour manipuler
   des documents XML de manière très similaire au projet javascript
-  ``jquery`` mais en restant en python::
+  ``jquery`` mais en restant en Python::
 
     http://pypi.python.org/pypi/pyquery
 

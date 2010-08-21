@@ -1,6 +1,8 @@
 Exploration des modules
 -----------------------
 
+La fonction buitin 'dir' permet de récupérer la liste des attributs et méthodes d'un objet.
+
 ::
     #!/usr/bin/env python
     
@@ -13,7 +15,7 @@ Exploration des modules
     print chaine.zfill.__doc__
 
 
-1. En utilisant la console python, afficher la documentation de la méthode
+1. En utilisant la console Python, afficher la documentation de la méthode
 extend d'une list.
 
 2. Afficher, avec une ligne par méthode, la liste des méthodes d'un 
@@ -25,7 +27,7 @@ dictionnaire
     import os
     print "%s a pour groupe principal : %s" % (os.geteuid(), os.getgid() )
 
-3. Utiliser une fonction du module os pour afficher tout les groupes du processus, 
+3. Utiliser une fonction du module os pour afficher tous les groupes du processus, 
 avec une boucle. 
 
 ::
@@ -34,9 +36,6 @@ avec une boucle.
     import shutils
     shutils.copyfile('/etc/passwd', '/tmp/passwd')
 
-
-4. En utilisant la variable d'environement $TMP et le module os, copier
-le fichier dans $TMP/passwd au lieu de copier dans /tmp/.
 
 ::
     #!/usr/bin/env python

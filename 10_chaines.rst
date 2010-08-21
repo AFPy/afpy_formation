@@ -1,33 +1,8 @@
-Programmation des chaines
+Programmation des chaînes
 -------------------------
 
-::
-    #!/usr/bin/env python
-
-    ma_chaine = "bonjour"
-    print ma_chaine
-
-    mon_autre_chaine = ma_chaine
-    # une copie de la chaine est rapide
-    print id(ma_chaine)
-    print id(mon_autre_chaine)
-
-    ma_chaine = "monde"
-    print id(ma_chaine)
-    print id(mon_autre_chaine)
-
-    print ma_chaine
-    print len(ma_chaine)
-
-    mon_autre_chaine = raw_input("Entrez votre nom : ")
-    print ma_chaine + ' ' + mon_autre_chaine
-
-
-1.  Saluer l'utilisateur si son nom fait plus de 4 caractéres, et lui faire
-une remarque si c'est pas le cas.
-
-
-::
+Les chaînes de caractères sont des objets possédant des méthodes permettant
+d'agir sur elles. Voici quelques exemples ::
 
     #!/usr/bin/env python
 
@@ -47,10 +22,10 @@ une remarque si c'est pas le cas.
     print ma_chaine.upper()
     print ma_chaine.lower()
 
-2. Remplacer les 4 derniers lettres d'une chaine entrée par l'utilisateur par
+Exercice 10.1. Remplacer les 4 dernières lettres d'une chaîne entrée par l'utilisateur par
 les lettres soir, si la chaine se termine par bonjour.
 
-3. Demander le nom d'un utilisateur, et lui dire bonjour avec une majuscule à son nom
+Exercice 10.2. Demander le nom d'un utilisateur, et lui dire bonjour avec une majuscule à son nom
 
 ::
     #!/usr/bin/env python
@@ -64,13 +39,13 @@ les lettres soir, si la chaine se termine par bonjour.
         if i == 'bonjour':
             print "Oui, bonjour encore"
 
-4. Corriger le programme suivant pour qu'il ne tienne pas
+Exercice 10.3. Corriger le programme suivant pour qu'il ne tienne pas
 compte de la casse des mots
 
-5. Corriger le programme pour qu'il ne réponde bonjour que
+Exercice 10.4. Corriger le programme pour qu'il ne réponde bonjour que
 si c'est le premier mot, avec une majuscule.
 
-6. Corriger le programme pour également utiliser
+Exercice 10.5. Corriger le programme pour également utiliser
 "salut" et "bonsoir" ( indice : utiliser l'instruction in )
 
 
@@ -83,10 +58,10 @@ si c'est le premier mot, avec une majuscule.
     for i in range(int(nombre)):
         print chaine
 
-7. Corriger le programme pour vérifier que le nombre n'est pas
+Exercice 10.6. Corriger le programme pour vérifier que le nombre n'est pas
 négatif, ou trop grand ( supérieur à 100 ).
 
-8. Corriger le programme pour voir si on rentre autre chose qu'un
+Exercice 10.7. Corriger le programme pour voir si on rentre autre chose qu'un
 entier ( indice : utiliser la méthode isdigit )
 
 
