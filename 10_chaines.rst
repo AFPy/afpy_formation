@@ -25,7 +25,7 @@ d'agir sur elles. Voici quelques exemples ::
 
 
 Écrire un programme qui récupère le texte d'Alice au Pays des Merveilles, et
-afficher les 5 mots les plus fréquents, indépendemment de leur casse, ainsi que
+afficher les 5 mots de plus de 4 caractères les plus fréquents, indépendemment de leur casse, ainsi que
 leurs occurrences respectives.
 
 
