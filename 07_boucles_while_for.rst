@@ -26,11 +26,11 @@ Exercice 7.1: Ecrire un programme qui boucle a l'infini en écrivant:
 "All work and no play makes Jack a dull boy" (faire un ctrl-C pour l'arrêter).
 
 La deuxième manière est de parcourir une collection itérable d'éléments (liste,
-tuples, caratères d'une chaine, éléments d'un dictionnaires)::
+tuple, chaîne, dictionnaire)::
 
   >>> jours = ['lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi']
   >>> for jour in jours:
-  ...    print 'il faut travailler le ' + jour
+  ...      print 'il faut travailler le ' + jour
   ...
   il faut travailler le lundi
   il faut travailler le mardi
@@ -40,11 +40,11 @@ tuples, caratères d'une chaine, éléments d'un dictionnaires)::
 
   >>> mon_dico = {0: 'zero', 1: 'un', 2: 'deux'}
   >>> for clef, valeur in mon_dico.items():
-  ...    if clef % 2 == 0:
-  ...        print valeur, 'est divisible par deux'
+  ...      if clef % 2 == 0:
+  ...          print valeur, 'est divisible par deux'
   ...
 
-Exercice 7: Ecrire un programme qui écrit 'j'aime pas les ' + chaque mot passé
+Exercice 7: Écrire un programme qui affiche 'j'aime pas les ' + chaque mot passé
 en arguments de la ligne de commande.
 
 

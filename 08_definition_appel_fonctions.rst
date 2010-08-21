@@ -1,7 +1,7 @@
-Definition et appels de fonctions
----------------------------------
+Définitions et appels de fonctions
+----------------------------------
 
-Une fonction se definit grace au mot clef 'def' et un bloc indenté::
+Une fonction se définit grace au mot clef 'def' et un bloc indenté::
 
   >>> def ma_fonction(a, b):
   ...     if b != 0:
@@ -13,6 +13,6 @@ Une fonction se definit grace au mot clef 'def' et un bloc indenté::
   >>> ma_fonction(1.0, 0.0)
   1.0
 
-Exercice 8: Ecrire une fonction "jaimepas" qui prend une liste en parametre et
+Exercice 8: Écrire une fonction "jaimepas" qui prend une liste en paramètre et
 qui se comporte comme dans le programme 07_boucle_2.py. Appeler cette fonction
 pour la liste des 5 jours travaillés de la semaine.
